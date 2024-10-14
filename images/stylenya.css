@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('konser_musik.jpeg.jpg') no-repeat center center/cover;
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .login-box {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 40px;
+    width: 350px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    font-size: 2em;
+  }
+  
+  .inputbox {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .inputbox input {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    color: white;
+    font-size: 1em;
+  }
+  
+  .inputbox span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: white;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  
+  .inputbox input:focus ~ span,
+  .inputbox input:valid ~ span {
+    top: -20px;
+    color: yellow;
+    font-size: 0.8em;
+  }
+  
+  .login-button {
+    width: 100%;
+    padding: 10px;
+    background: yellow;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: black;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  
+  .signup-link {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  .signup-link a {
+    color: yellow;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .or-divider {
+    text-align: center;
+    color: white;
+    margin: 20px 0;
+    position: relative;
+  }
+  
+  .or-divider::before,
+  .or-divider::after {
+    content: '';
+    width: 40%;
+    height: 1px;
+    background: white;
+    position: absolute;
+    top: 50%;
+  }
+  
+  .or-divider::before {
+    left: 0;
+  }
+  
+  .or-divider::after {
+    right: 0;
+  }
+  
+  .google-button {
+    width: 100%;
+    padding: 10px;
+    background: white;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+  
+  .google-logo {
+    width: 20px;
+    margin-right: 10px;
+  }
+  
